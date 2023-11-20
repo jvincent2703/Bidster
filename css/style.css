@@ -1,0 +1,74 @@
+:root{
+    --bg: #222222;
+    --yelText: #DAA520;
+    --redText: #DF1237;
+}
+
+*  {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+.navbar{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.navbar > *{
+    font-size: 1.5rem;
+}
+
+.pBid{
+    color: var(--yelText);
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.pBid span {
+    color: white;
+    font-style: italic;
+}
+
+.navList{
+    color: white;
+    padding-right: 30px;
+    font-style: normal;
+}
+
+.navLogin, .navReg{
+    color: var(--yelText);
+}
+
+.navReg{
+    padding-right: 30px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pFB{
+    color: var(--yelText);
+    font-size: 5rem;
+}
+
+.searchbar {
+    border: 2px solid var(--yelText);
+    font-size: 3rem;
+    color: white;
+    margin-left: 10px;
+    margin-top: -50px;
+    background-color: transparent;
+}
+    

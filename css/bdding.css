@@ -57,11 +57,11 @@ button {
 }
 
 #btnSteal, #steal{
-    color: rgb(161, 29, 29);
+    color: rgb(18, 92, 18);
 }
 
-#btnGrab, #grab{
-    color: rgb(18, 92, 18);
+#btnMine, #mine{
+    color: rgb(161, 29, 29);
 }
 
 #btnMine:hover, #btnSteal:hover, #btnGrab:hover {

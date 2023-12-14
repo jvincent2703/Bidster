@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/createbid.css">
+    <title>My Room</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="pBid"><a href="index.html">bid<span>ster</span></p></a></div>
+        <div class="navList"><a href="listing.html">Listings</a></div>
+        <div class="navLogin"><a href="userprofile.html">Profile</a></div>
+        <div class="navReg"><a href="login.html"  style="color: red;">Sign Out</a></div>
+    </div>
+
+    <div class="hero">
+        <div class="header">
+            <h1 class="herohead">Create a Room</h1>
+        </div>
+        <div class="heroName label">
+            <h1>Room / Bid Name:</h1>
+            <input type="text" class="inpBid inp">
+        </div>
+        <div class="slugHero label">
+            <h1>Slugline:</h1>
+            <input type="text" class="inpSlug inp">
+        </div>
+        <div class="classBtn">
+            <button id="conBtn">Confirm Creation</button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById("conBtn").addEventListener("click", bidding);
+
+        function bidding() { 
+            window.location = "bidding.html"; 
+        }
+    </script>
+</body>
+</html>

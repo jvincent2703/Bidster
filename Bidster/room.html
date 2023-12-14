@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/room.css">
+    <title>My Room</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="pBid"><a href="index.html">bid<span>ster</span></p></a></div>
+        <div class="navList"><a href="listing.html">Listings</a></div>
+        <div class="navLogin"><a href="userprofile.html">Profile</a></div>
+        <div class="navReg"><a href="login.html"  style="color: red;">Sign Out</a></div>
+    </div>
+
+    <div class="hero">
+        <div class="room">
+            <h1>My Room</h1>
+        </div>
+        <div class="creatediv">
+            <button id="redCreate"><h2>Create Bid</h2></button>
+        </div>
+    </div>
+
+    <div class="bids">
+        <table>
+            <tr>
+              <th>Bid Name</th>
+              <th>Sluglines</th>
+            </tr>
+            <tr>
+              <td>Bid Name 1</td>
+              <td>Slugline 1</td>
+              <td><a href="" class="tdEdit">Edit</a></td>
+              <td><a href="" class="tdDel">Delete</a></td>
+            </tr>
+            <tr>
+              <td>Bid Name 2</td>
+              <td>Slugline 2</td>
+              <td><a href="" class="tdEdit">Edit</a></td>
+              <td><a href="" class="tdDel">Delete</a></td>
+            </tr>
+          </table>
+    </div>
+
+    <section>
+        <footer>
+            <div class="footerContainer">
+                <div class="footertop">
+                    <h1><span>BID</span>STER</h1><br />
+                </div>
+                <div class="footermiddle">
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+                </div>
+                <div class="footerbottom">
+                    <p>Copyright &copy;2023, Designed by<span class="designer">Bidster Group # </span></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        document.getElementById("redCreate").addEventListener("click", redir);
+
+        function redir() { 
+            window.location = "createbid.html"; 
+        }
+    </script>
+</body>
+</html>

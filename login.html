@@ -3,35 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Login</title>
 </head>
 <body>
     <div class="navbar">
         <div class="pBid"><a href="index.html">bid<span>ster</span></p></a></div>
     </div>
-    <div class="hero">
-        <div class="pFB"><p>Login</p></div>
-        <div class="content"><p>Lorem ipsum dolor sit<br />amet, consectetur<br />adipiscing elit. Donec<br />mollis.</p></div>
-        <div class="aHA"><a href="register.html">Don't have an account?'</a></div>
-    </div>
-    <div class="container">
-        <form action="#" method="post">
-            <div>
-                <label for="username" class="form-label">Username</label>
-                <input type="text" name="username" class="form-control" id="username" />
-            </div>
-            <div>
-                <label for="password" class="form-label">Password</label>
-                <input type="text" name="password" class="form-control" id="password" />
-            </div>
-            <div>
-                <input type="checkbox" name="remember" class="form-check-input" />
-                <label for="remember" class="form-check-label"> Remember Me</label>
-            </div>
-            <a href="#">Forgot Password?</a>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+    <div class="loginCont">
+        <div class="hero container col">
+            <div class="pFB"><p>LOG<span>IN</span></p></div>
+            <div class="content" style="color: white;"><p>Login <span>NOW</span> to get started!</p></div>
+            <div class="aHA"><a href="register.html" class="aHA"><u>No account yet? Create one!</u></a></div>
+        </div>
+        <div class="container col">
+            <form action="#" method="post" class="card">
+                <div class="uname">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" style="width: 100%;" />
+                </div>
+                <div class="uname">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="text" name="password" class="form-control" id="password" style="width: 100%;"/>
+                </div>
+                <div>
+                    <a href="#" style="color: white;">Forgot Password?</a>
+                </div>
+                <div>
+                    <input type="checkbox" name="remember" class="form-check-input" />
+                    <label for="remember" class="form-check-label">Always Remember</label>
+                </div>
+                <button type="submit" class="btn btn-primary btnlogin">Login</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

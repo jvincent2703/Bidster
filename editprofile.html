@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/editprofile.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="pBid"><a href="index.html">bid<span>ster</span></p></a></div>
+        <div class="navList"><a href="listing.html">Listings</a></div>
+        <div class="navLogin"><a href="userprofile.html">Profile</a></div>
+        <div class="navReg"><a href="login.html"  style="color: red;">Sign Out</a></div>
+    </div>
+
+    <main>
+        <section class="profile">
+            <img src="./profilepicutres/dummy.jpg" alt="User Picture">
+            <form action="" method="post">
+                <input type="text" class="useredit" placeholder="Dummy">
+            </form>
+            <h2 class="username">@dummy01</h2>
+            <div class="container">
+                <div class="description">
+                <form action="" method="post">
+                    <input type="text" class="form-control" placeholder="Lorem ipsum...">
+                </form>
+                <div class="buttons">
+                    <button class="btnEdit" id="redirectProfile">Save profile info</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <footer>
+            <div class="footerContainer">
+                <div class="footertop">
+                    <h1><span>BID</span>STER</h1><br />
+                </div>
+                <div class="footermiddle">
+                    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+                </div>
+                <div class="footerbottom">
+                    <p>Copyright &copy;2023, Designed by<span class="designer">Bidster Group # </span></p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        
+        document.getElementById("redirectProfile").addEventListener("click", profile);
+
+        function profile() { 
+            window.location = "userprofile.html"; 
+        }
+    </script>
+    
+</body>
+</html>
